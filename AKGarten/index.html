@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Akgarten Stein & Design – individuelle Gartengestaltung und hochwertige Steinlösungen für Ihr Zuhause." />
+  <title>Akgarten Stein & Design</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Zusätzliche Styles für ausgeklappten Text */
+    .more-text { display: none; margin-top: 15px; color: #555; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1 class="logo">Akgarten Stein & Design</h1>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="Kontakt.html">Kontakt</a></li>
+      <li><a href="Über uns.html">Über uns</a></li>
+      <li><a href="Beratung.html">Beratung</a></li>
+    </ul>
+    <button class="btn-buchen" onclick="window.location.href='Kontakt.html'">Jetzt buchen</button>
+  </nav>
+
+  <!-- Full Width Banner -->
+  <section class="banner">
+    <div class="banner-text">
+      <h2>Individuelle Gartenträume aus Stein</h2>
+      <p>
+        Starke Arbeit. Saubere Ergebnisse. Dauerhafte Qualität.
+        Von Pflaster- und Natursteinen bis Terrassenplatten und 
+        L-Steinen – wir gestalten Ihre Außenanlagen präzise, 
+        zuverlässig und termingerecht. Wir bauen Zukunft – stabil, 
+        schön und langlebig.
+      </p>
+    </div>
+  </section>
+
+  <!-- Hero Sektionen -->
+  <section class="hero">
+    <img src="Wald.jpeg" alt="Waldlandschaft" />
+    <div class="hero-text">
+      <h2>Zu Hause aufblühen</h2>
+      <p>
+        Was unterscheidet ein Haus von einem Zuhause? Ein sicherer Ort für Entspannung,
+        Aktivität und Kreativität – eine echte Wohlfühloase.
+        „Zuhause“ bedeutet für jeden etwas anderes.
+        Lassen Sie uns Ihrer Umgebung mehr Persönlichkeit geben!
+      </p>
+      <button class="btn-mehr" onclick="toggleText(1)">Mehr lesen</button>
+      <div id="text-1" class="more-text">
+        <p>Wir bieten maßgeschneiderte Gartengestaltungen an, von bepflanzten Beeten bis zu Natursteinwegen. Jeder Garten wird individuell geplant, damit Sie Ihren persönlichen Rückzugsort genießen können.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="second-hero">
+    <img src="aaa.jpg" alt="Modernes Haus mit Garten" />
+    <div class="second-hero-text">
+      <h2>Auf gute Zusammenarbeit</h2>
+      <p>
+        Gemeinsam entwickeln wir individuelle Lösungen für Ihren Außenbereich.
+        Von der Planung bis zur Umsetzung stehen Qualität, Ästhetik und
+        Langlebigkeit im Mittelpunkt.
+      </p>
+      <button class="btn-mehr" onclick="toggleText(2)">Mehr lesen</button>
+      <div id="text-2" class="more-text">
+        <p>Unser Team begleitet Sie Schritt für Schritt: Beratung, Planung, Materialauswahl und fachgerechte Umsetzung. Wir setzen Ihre Wünsche zuverlässig um.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero">
+    <img src="bild3.jpeg" alt="Naturstein Terrasse" />
+    <div class="hero-text">
+      <h2>Elegante Natursteinflächen</h2>
+      <p>
+        Hochwertige Natursteine verleihen Ihrem Außenbereich eine zeitlose und edle Optik.
+        Individuell angepasst an Ihre Wünsche.
+      </p>
+      <button class="btn-mehr" onclick="toggleText(3)">Mehr lesen</button>
+      <div id="text-3" class="more-text">
+        <p>Wir beraten Sie bei der Auswahl der Steinsorten, Oberflächen und Verlegemuster, sodass Ihre Terrasse ein echtes Highlight wird.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="second-hero">
+    <img src="bild4.jpeg" alt="Gartenweg aus Stein" />
+    <div class="second-hero-text">
+      <h2>Stilvolle Gartenwege</h2>
+      <p>
+        Harmonische Wege verbinden Design mit Funktionalität.
+        Wir planen langlebige und ästhetische Lösungen.
+      </p>
+      <button class="btn-mehr" onclick="toggleText(4)">Mehr lesen</button>
+      <div id="text-4" class="more-text">
+        <p>Ob Naturstein, Pflaster oder dekorative Kieswege – wir gestalten Ihren Gartenweg passend zu Haus und Gartenstil.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero">
+    <img src="bild5.jpeg" alt="Moderne Gartengestaltung" />
+    <div class="hero-text">
+      <h2>Moderne Gartengestaltung</h2>
+      <p>
+        Klare Linien, hochwertige Materialien und durchdachte Planung – 
+        für einen Garten, der begeistert.
+      </p>
+      <button class="btn-mehr" onclick="toggleText(5)">Mehr lesen</button>
+      <div id="text-5" class="more-text">
+        <p>Minimalistische Designs, nachhaltige Materialien und kreative Ideen lassen Ihren Garten modern, elegant und pflegeleicht wirken.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="second-hero">
+    <img src="bild7.jpeg" alt="Steinterrasse" />
+    <div class="second-hero-text">
+      <h2>Terrassen mit Charakter</h2>
+      <p>
+        Ihre Terrasse wird zum Mittelpunkt Ihres Zuhauses – 
+        individuell gestaltet und langlebig umgesetzt.
+      </p>
+      <button class="btn-mehr" onclick="toggleText(6)">Mehr lesen</button>
+      <div id="text-6" class="more-text">
+        <p>Wir berücksichtigen Sonnenstand, Sichtschutz, Materialien und Form, damit Ihre Terrasse perfekt zu Ihrem Zuhause passt.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero">
+    <img src="Bild11.jpeg" alt="Außenanlage Design" />
+    <div class="hero-text">
+      <h2>Außenanlagen Design</h2>
+      <p>
+        Kreative Gestaltungskonzepte für Einfahrten, Höfe und Gärten.
+      </p>
+      <button class="btn-mehr" onclick="toggleText(7)">Mehr lesen</button>
+      <div id="text-7" class="more-text">
+        <p>Wir planen und gestalten Einfahrten, Zäune, Beleuchtung und Pflanzungen harmonisch für ein stimmiges Gesamtbild.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="second-hero">
+    <img src="bild8.jpeg" alt="Naturstein Mauer" />
+    <div class="second-hero-text">
+      <h2>Individuelle Steinmauern</h2>
+      <p>
+        Robuste Mauern mit ästhetischem Anspruch – perfekt für moderne Gärten.
+      </p>
+      <button class="btn-mehr" onclick="toggleText(8)">Mehr lesen</button>
+      <div id="text-8" class="more-text">
+        <p>Unsere Mauern verbinden Stabilität mit Design und lassen sich perfekt in die Gartengestaltung integrieren.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="Impressum.html">Impressum</a> | 
+      <a href="Datenschutz.html">Datenschutz</a> | 
+      <a href="AGB.html">AGB</a>
+    </div>
+    <p>© 2026 AKGarten Stein & Design – Alle Rechte vorbehalten</p>
+  </footer>
+
+  <!-- JS: Logo sichtbar, Menü ausblenden beim Scrollen + Mehr-lesen Toggle -->
+  <script>
+    if (window.innerWidth <= 600) {
+      const navbar = document.querySelector('.navbar');
+      let lastScroll = 0;
+
+      window.addEventListener('scroll', () => {
+        const currentScroll = window.scrollY;
+
+        if (currentScroll > lastScroll && currentScroll > 50) {
+          navbar.classList.add('hide-items');
+        } else {
+          navbar.classList.remove('hide-items');
+        }
+
+        lastScroll = currentScroll;
+      });
+    }
+
+    // Funktion für "Mehr lesen"
+    function toggleText(n) {
+      const text = document.getElementById(`text-${n}`);
+      if (text.style.display === "none" || text.style.display === "") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
